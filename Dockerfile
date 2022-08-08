@@ -6,6 +6,5 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page281/ko
 WORKDIR /var/www/html
 RUN unzip koppee.zip
 RUN cp -rvf coffee-shop-html-template/* .
-RUN rm -rf  coffee-shop-html-template koppee.zip
 CMD ["/usr/sbin/httpd" , "-D", "FOREGROUND"]
 EXPOSE 80
